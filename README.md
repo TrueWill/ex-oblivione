@@ -22,6 +22,8 @@ The name is taken from a poem by H. P. Lovecraft.
 - Works in modern browsers
 - All tests pass
 
+I'm using [React Testing Library](https://github.com/testing-library/react-testing-library) for tests, but frequently dropping to the [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) to test components. If anyone has suggestions on accessibility for an app of this complexity (preferably preserving the look and feel), please share.
+
 ## Acknowledgements
 
 Built with React and Redux - thanks so much to Facebook, Dan Abramov, Mark Erikson, and all contributors!
