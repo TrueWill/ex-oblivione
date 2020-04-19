@@ -16,6 +16,7 @@ The name is taken from a poem by H. P. Lovecraft.
 - [Strict Mode](https://reactjs.org/docs/strict-mode.html)
 - Use function components over class components (OK to use [Hooks](https://reactjs.org/docs/hooks-intro.html))
 - [CSS Modules](https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet)
+- [Bootstrap](https://getbootstrap.com/) v4
 - [Prettier](https://prettier.io/) 2 with single quotes
 - No ESLint warnings/errors
 - No console warnings/errors
