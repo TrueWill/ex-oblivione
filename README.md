@@ -15,7 +15,7 @@ This builds heavily on [Embracer](https://github.com/TrueWill/embracer), another
 ### Standards
 
 - TypeScript strict option
-- [Strict Mode](https://reactjs.org/docs/strict-mode.html)
+- [Strict Mode](https://reactjs.org/docs/strict-mode.html) (except for react-select)
 - Use function components over class components (OK to use [Hooks](https://reactjs.org/docs/hooks-intro.html))
 - [CSS Modules](https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet)
 - [Bootstrap](https://getbootstrap.com/) v4
