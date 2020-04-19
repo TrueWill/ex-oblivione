@@ -8,6 +8,8 @@ Some terms are copyrighted by or registered trademarks of White Wolf Entertainme
 
 The name is taken from a poem by H. P. Lovecraft.
 
+This builds heavily on [Embracer](https://github.com/TrueWill/embracer), another project of mine.
+
 ## Contributing
 
 ### Standards
