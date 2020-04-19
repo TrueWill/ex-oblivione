@@ -2,7 +2,7 @@ import React from 'react';
 import { version } from '../constants/application';
 import Section from './Section';
 import styles from './App.module.css';
-import ArchetypeContainer from './ArchetypeContainer';
+import Archetype from './Archetype';
 
 const App: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const App: React.FC = () => {
         Ex Oblivione <span className={styles.version}> v{version}</span>
       </h1>
       <Section header="Character">
-        <ArchetypeContainer />
+        <Archetype />
       </Section>
       <React.StrictMode>
         {/* react-select in Archetype fails StrictMode */}

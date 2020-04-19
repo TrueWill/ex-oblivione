@@ -1,16 +1,16 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectArchetype, updateArchetype } from '../basicInfo';
 import CreatableSelect from 'react-select/creatable';
 import { archetypes } from '../constants/characterOptions';
 
-interface IProps {
-  archetype: string;
-  updateArchetype: (s: string) => void;
-}
+const Archetype: React.FC = () => {
+  const archetype = useSelector(selectArchetype);
+  const dispatch = useDispatch();
 
-const Archetype: React.FC<IProps> = ({ archetype, updateArchetype }) => {
   const handleArchetypeChange = (val: any) => {
     const value: string = val ? val.value : '';
-    updateArchetype(value);
+    dispatch(updateArchetype(value));
   };
 
   const value = archetype
