@@ -26,7 +26,7 @@ I'm using [React Testing Library](https://github.com/testing-library/react-testi
 
 ## Acknowledgements
 
-Built with React and Redux - thanks so much to Facebook, Dan Abramov, Mark Erikson, and all contributors!
+Built with React, Redux, and [Redux Toolkit](https://redux-toolkit.js.org/) - thanks so much to Facebook, Dan Abramov, Mark Erikson, and all contributors!
 
 Built with TypeScript - thanks to Microsoft, Anders Hejlsberg, and the community!
 
