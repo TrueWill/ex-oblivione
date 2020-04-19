@@ -1,5 +1,5 @@
 import React from 'react';
-import Dots from './components/Dots';
+import Dots from './Dots';
 import './App.css';
 
 function App() {
