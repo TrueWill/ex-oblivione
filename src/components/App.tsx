@@ -2,20 +2,16 @@ import React from 'react';
 import { version } from '../constants/application';
 import Section from './Section';
 import styles from './App.module.css';
-import Archetype from './Archetype';
+import ArchetypeContainer from './ArchetypeContainer';
 
 const App: React.FC = () => {
-  const updateArchetype = (s: string) => {
-    console.log(s);
-  };
-
   return (
     <div className="container-fluid">
       <h1>
         Ex Oblivione <span className={styles.version}> v{version}</span>
       </h1>
       <Section header="Character">
-        <Archetype archetype="Judge" updateArchetype={updateArchetype} />
+        <ArchetypeContainer />
       </Section>
       <React.StrictMode>
         {/* react-select in Archetype fails StrictMode */}

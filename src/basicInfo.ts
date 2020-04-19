@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import initialState from './initialState';
-import { RootState } from './configureStore';
+import { RootState } from './store';
 
 export const basicInfoSlice = createSlice({
   name: 'basicInfo',
