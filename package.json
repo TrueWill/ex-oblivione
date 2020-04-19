@@ -37,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/deep-freeze": "^0.1.2",
+    "deep-freeze": "0.0.1"
   }
 }
