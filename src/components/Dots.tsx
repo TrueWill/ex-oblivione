@@ -7,7 +7,7 @@ const filledClass = 'fa fa-circle';
 interface IProps {
   level?: number;
   max?: number;
-  onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+  onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 
 const Dots: React.FC<IProps> = ({ level = 0, max = 5, onClick }) => {
