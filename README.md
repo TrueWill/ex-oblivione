@@ -29,3 +29,5 @@ Built with React and Redux - thanks so much to Facebook, Dan Abramov, Mark Eriks
 Built with TypeScript - thanks to Microsoft, Anders Hejlsberg, and the community!
 
 Thanks to [Cory House](https://www.reactjsconsulting.com/) for pointing me to [react-typescript-cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet), and to [@swyx](https://twitter.com/swyx) and other contributors for those cheatsheets!
+
+Uses [Font Awesome](https://fontawesome.com/) by Dave Gandy (v4, **not** v5).
