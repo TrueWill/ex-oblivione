@@ -27,3 +27,5 @@ The name is taken from a poem by H. P. Lovecraft.
 Built with React and Redux - thanks so much to Facebook, Dan Abramov, Mark Erikson, and all contributors!
 
 Built with TypeScript - thanks to Microsoft, Anders Hejlsberg, and the community!
+
+Thanks to [Cory House](https://www.reactjsconsulting.com/) for pointing me to [react-typescript-cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet), and to [@swyx](https://twitter.com/swyx) and other contributors for those cheatsheets!
