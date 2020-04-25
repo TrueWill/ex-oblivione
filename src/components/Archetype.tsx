@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectArchetype, updateArchetype } from '../basicInfo';
+import { selectArchetype, updateArchetype } from '../state/basicInfo';
 import CreatableSelect from 'react-select/creatable';
 import { archetypes } from '../constants/characterOptions';
 
