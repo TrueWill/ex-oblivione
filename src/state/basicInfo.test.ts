@@ -1,5 +1,5 @@
 import deepFreeze from 'deep-freeze';
-import reducer, { updateArchetype } from './basicInfo';
+import reducer, { setArchetype } from './basicInfo';
 import initialState from './initialState';
 
 it('should initialize', () => {
@@ -10,14 +10,14 @@ it('should initialize', () => {
   expect(nextState).toBe(initialState.character.basicInfo);
 });
 
-it('should update archetype', () => {
+it('should set archetype', () => {
   const state = {
     archetype: 'old',
   };
 
   deepFreeze(state);
 
-  const action = updateArchetype('new');
+  const action = setArchetype('new');
 
   const nextState = reducer(state, action);
 
