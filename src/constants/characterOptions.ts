@@ -39,5 +39,3 @@ export const archetypes = [
   'Unflappable',
   'Untrustworthy',
 ];
-
-export const attributeTraitNames = ['physical', 'social', 'mental'];

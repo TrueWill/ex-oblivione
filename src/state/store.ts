@@ -1,9 +1,11 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import basicInfo from './basicInfo';
+import attributes from './attributes';
 
 const rootReducer = combineReducers({
   character: combineReducers({
     basicInfo,
+    attributes,
   }),
 });
 

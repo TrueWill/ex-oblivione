@@ -2,7 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 import initialState from './initialState';
 import { RootState } from './store';
 
-export const basicInfoSlice = createSlice({
+// TODO: rename to setArchetype
+const basicInfoSlice = createSlice({
   name: 'basicInfo',
   initialState: initialState.character.basicInfo,
   reducers: {
