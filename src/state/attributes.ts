@@ -19,6 +19,22 @@ const attributesSlice = createSlice({
   reducers: {
     setPriority(state, action: PayloadAction<AttributeCategoryPriority>) {
       const { category, priority } = action.payload;
+      const previousPriority = state[category].priority;
+
+      if (priority === previousPriority) {
+        return;
+      }
+
+      // IE doesn't support Array.prototype.find.
+      const otherCategoryWithNewPriority = (Object.keys(state) as Array<
+        keyof typeof state
+      >).filter((key) => state[key].priority === priority)[0];
+
+      if (otherCategoryWithNewPriority) {
+        // Swap priorities
+        state[otherCategoryWithNewPriority].priority = previousPriority;
+      }
+
       state[category].priority = priority;
     },
   },

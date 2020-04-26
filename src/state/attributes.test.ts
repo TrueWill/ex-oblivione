@@ -10,7 +10,7 @@ it('should initialize', () => {
   expect(nextState).toBe(initialState.character.attributes);
 });
 
-it('should set priority', () => {
+it('should set priority, swapping values', () => {
   const state = {
     physical: {
       priority: 1,
@@ -62,10 +62,9 @@ it('should set priority', () => {
 
   const nextState = reducer(state, action);
 
-  // TODO Working - need to change other values
   expect(nextState).toEqual({
     physical: {
-      priority: 1,
+      priority: 3,
       traits: {
         strength: {
           dots: 1,
