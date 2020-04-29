@@ -35,4 +35,6 @@ Built with TypeScript - thanks to Microsoft, Anders Hejlsberg, and the community
 
 Thanks to [Cory House](https://www.reactjsconsulting.com/) for pointing me to [react-typescript-cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet), and to [@swyx](https://twitter.com/swyx) and other contributors for those cheatsheets!
 
+Thanks to [jcalz](https://stackoverflow.com/users/2887218/jcalz) for answering a tricky TypeScript question!
+
 Uses [Font Awesome](https://fontawesome.com/) by Dave Gandy (v4, **not** v5).

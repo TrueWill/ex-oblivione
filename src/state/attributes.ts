@@ -27,6 +27,11 @@ type AttributeTrait =
       trait: keyof typeof initialState.character.attributes.mental.traits;
     };
 
+type Traits = Record<
+  AttributeTrait['trait'],
+  typeof initialState.character.attributes.physical.traits.strength
+>;
+
 const attributesSlice = createSlice({
   name: 'attributes',
   initialState: initialState.character.attributes,
@@ -54,14 +59,12 @@ const attributesSlice = createSlice({
     addDot(state, action: PayloadAction<AttributeTrait>) {
       const { category, trait } = action.payload;
 
-      // TODO: Figure out how to type this
-      (state[category].traits as any)[trait].dots++;
+      (state[category].traits as Traits)[trait].dots++;
     },
     removeDot(state, action: PayloadAction<AttributeTrait>) {
       const { category, trait } = action.payload;
 
-      // TODO: Figure out how to type this
-      const traitObject = (state[category].traits as any)[trait];
+      const traitObject = (state[category].traits as Traits)[trait];
 
       if (traitObject.dots > 1) {
         traitObject.dots--;
