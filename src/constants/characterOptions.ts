@@ -39,3 +39,5 @@ export const archetypes = [
   'Unflappable',
   'Untrustworthy',
 ];
+
+export const minimumTraitDotsForSpecialty = 4;

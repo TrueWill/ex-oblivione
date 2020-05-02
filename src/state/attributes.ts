@@ -1,19 +1,13 @@
-// TODO working
-// category - physical, etc.
-// primary, secondary priority
-// name - Strength etc.
-// dots (start at 1)
-// specialty
-
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import initialState from './initialState';
+import { minimumTraitDotsForSpecialty } from '../constants/characterOptions';
 
 export interface AttributeCategoryPriority {
   category: keyof typeof initialState.character.attributes;
   priority: number;
 }
 
-type AttributeTrait =
+export type AttributeTrait =
   | {
       category: 'physical';
       trait: keyof typeof initialState.character.attributes.physical.traits;
@@ -27,10 +21,14 @@ type AttributeTrait =
       trait: keyof typeof initialState.character.attributes.mental.traits;
     };
 
+export type AttributeTraitSpecialty = AttributeTrait & { specialty: string };
+
 // See https://stackoverflow.com/a/61450491/161457
 type Traits = Record<
   AttributeTrait['trait'],
-  typeof initialState.character.attributes.physical.traits.strength
+  typeof initialState.character.attributes.physical.traits.strength & {
+    specialty: string;
+  }
 >;
 
 const attributesSlice = createSlice({
@@ -71,9 +69,23 @@ const attributesSlice = createSlice({
         traitObject.dots--;
       }
     },
+    setSpecialty(state, action: PayloadAction<AttributeTraitSpecialty>) {
+      const { category, trait, specialty } = action.payload;
+
+      const traitObject = (state[category].traits as Traits)[trait];
+
+      if (traitObject.dots >= minimumTraitDotsForSpecialty) {
+        traitObject.specialty = specialty;
+      }
+    },
   },
 });
 
-export const { setPriority, addDot, removeDot } = attributesSlice.actions;
+export const {
+  setPriority,
+  addDot,
+  removeDot,
+  setSpecialty,
+} = attributesSlice.actions;
 
 export default attributesSlice.reducer;
