@@ -27,6 +27,7 @@ type AttributeTrait =
       trait: keyof typeof initialState.character.attributes.mental.traits;
     };
 
+// See https://stackoverflow.com/a/61450491/161457
 type Traits = Record<
   AttributeTrait['trait'],
   typeof initialState.character.attributes.physical.traits.strength
