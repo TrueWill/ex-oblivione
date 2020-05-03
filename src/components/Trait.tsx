@@ -24,7 +24,7 @@ const Trait: React.FC<IProps> = ({
   return (
     <div>
       <div className={styles.name}>{displayName}</div>
-      <Dots level={rating} max={maxDots} onClick={handleOnClick} />
+      <Dots rating={rating} max={maxDots} onClick={handleOnClick} />
     </div>
   );
 };
