@@ -21,6 +21,8 @@ const Trait: React.FC<IProps> = ({
     onClick(name);
   };
 
+  displayName = name; // TODO
+
   return (
     <div>
       <div className={styles.name}>{displayName}</div>

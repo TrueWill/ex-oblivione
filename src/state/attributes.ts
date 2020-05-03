@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import initialState from './initialState';
 import { minimumTraitRatingForSpecialty } from '../constants/characterOptions';
+import { RootState } from './store';
 
 export interface AttributeCategoryPriority {
   category: keyof typeof initialState.character.attributes;
@@ -27,7 +28,7 @@ export type AttributeTraitSpecialty = AttributeTrait & { specialty: string };
 type Traits = Record<
   AttributeTrait['trait'],
   typeof initialState.character.attributes.physical.traits.strength & {
-    specialty: string;
+    specialty?: string;
   }
 >;
 
@@ -87,5 +88,8 @@ export const {
   removeDot,
   setSpecialty,
 } = attributesSlice.actions;
+
+export const selectAttributes = (state: RootState) =>
+  state.character.attributes;
 
 export default attributesSlice.reducer;

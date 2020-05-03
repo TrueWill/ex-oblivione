@@ -41,3 +41,5 @@ export const archetypes = [
 ];
 
 export const minimumTraitRatingForSpecialty = 4;
+
+export const standardMaxDots = 5;

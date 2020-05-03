@@ -15,27 +15,29 @@ const descriptions = [
 
 interface IProps {
   dots: number[];
-  dotValue?: number;
-  onChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  priority: number;
+  onChange: (priority: number) => void;
 }
 
-const Priority: React.FC<IProps> = ({ dots, dotValue, onChange }) => {
+const Priority: React.FC<IProps> = ({ dots, priority, onChange }) => {
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    onChange(Number(event.target.value));
+  };
+
   const optionElements = dots.map((value, index) => (
-    <option key={index} value={value}>
+    <option key={index + 1} value={index + 1}>
       {descriptions[index]} ({value})
     </option>
   ));
 
   return (
-    <select value={dotValue} onChange={onChange}>
-      <option value={0}>(not prioritized)</option>
-      {optionElements}
-    </select>
+    <div>
+      Priority:
+      <select value={priority} onChange={handleChange}>
+        {optionElements}
+      </select>
+    </div>
   );
-};
-
-Priority.defaultProps = {
-  dotValue: 0,
 };
 
 export default Priority;

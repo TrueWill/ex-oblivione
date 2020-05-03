@@ -3,6 +3,7 @@ import { version } from '../constants/application';
 import Section from './Section';
 import styles from './App.module.css';
 import Archetype from './Archetype';
+import AttributeTraitCategory from './AttributeTraitCategory';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       </Section>
       <React.StrictMode>
         {/* react-select in Archetype fails StrictMode */}
+        <AttributeTraitCategory categoryName="physical" />
         <div className={`row ${styles.attribution}`}>
           <div className="col-sm-12">
             Some terms are copyrighted by or registered trademarks of White Wolf
