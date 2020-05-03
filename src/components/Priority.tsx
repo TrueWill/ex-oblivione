@@ -19,7 +19,7 @@ interface IProps {
   onChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
-const Rank: React.FC<IProps> = ({ dots, dotValue, onChange }) => {
+const Priority: React.FC<IProps> = ({ dots, dotValue, onChange }) => {
   const optionElements = dots.map((value, index) => (
     <option key={index} value={value}>
       {descriptions[index]} ({value})
@@ -28,14 +28,14 @@ const Rank: React.FC<IProps> = ({ dots, dotValue, onChange }) => {
 
   return (
     <select value={dotValue} onChange={onChange}>
-      <option value={0}>(not ranked)</option>
+      <option value={0}>(not prioritized)</option>
       {optionElements}
     </select>
   );
 };
 
-Rank.defaultProps = {
+Priority.defaultProps = {
   dotValue: 0,
 };
 
-export default Rank;
+export default Priority;
