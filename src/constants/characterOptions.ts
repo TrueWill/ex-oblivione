@@ -40,4 +40,4 @@ export const archetypes = [
   'Untrustworthy',
 ];
 
-export const minimumTraitDotsForSpecialty = 4;
+export const minimumTraitRatingForSpecialty = 4;

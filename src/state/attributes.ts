@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import initialState from './initialState';
-import { minimumTraitDotsForSpecialty } from '../constants/characterOptions';
+import { minimumTraitRatingForSpecialty } from '../constants/characterOptions';
 
 export interface AttributeCategoryPriority {
   category: keyof typeof initialState.character.attributes;
@@ -58,15 +58,15 @@ const attributesSlice = createSlice({
     addDot(state, action: PayloadAction<AttributeTrait>) {
       const { category, trait } = action.payload;
 
-      (state[category].traits as Traits)[trait].dots++;
+      (state[category].traits as Traits)[trait].rating++;
     },
     removeDot(state, action: PayloadAction<AttributeTrait>) {
       const { category, trait } = action.payload;
 
       const traitObject = (state[category].traits as Traits)[trait];
 
-      if (traitObject.dots > 1) {
-        traitObject.dots--;
+      if (traitObject.rating > 1) {
+        traitObject.rating--;
       }
     },
     setSpecialty(state, action: PayloadAction<AttributeTraitSpecialty>) {
@@ -74,7 +74,7 @@ const attributesSlice = createSlice({
 
       const traitObject = (state[category].traits as Traits)[trait];
 
-      if (traitObject.dots >= minimumTraitDotsForSpecialty) {
+      if (traitObject.rating >= minimumTraitRatingForSpecialty) {
         traitObject.specialty = specialty;
       }
     },

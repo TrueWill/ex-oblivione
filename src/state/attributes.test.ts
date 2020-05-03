@@ -21,13 +21,13 @@ it('should set priority, swapping values', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 1,
+          rating: 1,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -35,13 +35,13 @@ it('should set priority, swapping values', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 1,
+          rating: 1,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -49,13 +49,13 @@ it('should set priority, swapping values', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -72,13 +72,13 @@ it('should set priority, swapping values', () => {
       priority: 3,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 1,
+          rating: 1,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -86,13 +86,13 @@ it('should set priority, swapping values', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 1,
+          rating: 1,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -100,13 +100,13 @@ it('should set priority, swapping values', () => {
       priority: 1,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -119,13 +119,13 @@ it('should add dot', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 1,
+          rating: 1,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -133,13 +133,13 @@ it('should add dot', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 1,
+          rating: 1,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -147,13 +147,13 @@ it('should add dot', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -170,13 +170,13 @@ it('should add dot', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 1,
+          rating: 1,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -184,13 +184,13 @@ it('should add dot', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 2,
+          rating: 2,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -198,13 +198,13 @@ it('should add dot', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -217,13 +217,13 @@ it('should remove dot', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 1,
+          rating: 1,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -231,13 +231,13 @@ it('should remove dot', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 2,
+          rating: 2,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -245,13 +245,13 @@ it('should remove dot', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -268,13 +268,13 @@ it('should remove dot', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 1,
+          rating: 1,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -282,13 +282,13 @@ it('should remove dot', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 1,
+          rating: 1,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -296,13 +296,13 @@ it('should remove dot', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -315,13 +315,13 @@ it('should not remove dot if at 1', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 1,
+          rating: 1,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -329,13 +329,13 @@ it('should not remove dot if at 1', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 1,
+          rating: 1,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -343,13 +343,13 @@ it('should not remove dot if at 1', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -366,13 +366,13 @@ it('should not remove dot if at 1', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 1,
+          rating: 1,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -380,13 +380,13 @@ it('should not remove dot if at 1', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 1,
+          rating: 1,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -394,13 +394,13 @@ it('should not remove dot if at 1', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -413,13 +413,13 @@ it('should set specialty', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 4,
+          rating: 4,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -427,13 +427,13 @@ it('should set specialty', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 1,
+          rating: 1,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -441,13 +441,13 @@ it('should set specialty', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -468,14 +468,14 @@ it('should set specialty', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 4,
+          rating: 4,
           specialty: 'Catlike',
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -483,13 +483,13 @@ it('should set specialty', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 1,
+          rating: 1,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -497,13 +497,13 @@ it('should set specialty', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -516,13 +516,13 @@ it('should not set specialty if below 4', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 3,
+          rating: 3,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -530,13 +530,13 @@ it('should not set specialty if below 4', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 1,
+          rating: 1,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -544,13 +544,13 @@ it('should not set specialty if below 4', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -571,13 +571,13 @@ it('should not set specialty if below 4', () => {
       priority: 1,
       traits: {
         strength: {
-          dots: 1,
+          rating: 1,
         },
         dexterity: {
-          dots: 3,
+          rating: 3,
         },
         stamina: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -585,13 +585,13 @@ it('should not set specialty if below 4', () => {
       priority: 2,
       traits: {
         charisma: {
-          dots: 1,
+          rating: 1,
         },
         manipulation: {
-          dots: 1,
+          rating: 1,
         },
         appearance: {
-          dots: 1,
+          rating: 1,
         },
       },
     },
@@ -599,13 +599,13 @@ it('should not set specialty if below 4', () => {
       priority: 3,
       traits: {
         perception: {
-          dots: 1,
+          rating: 1,
         },
         intelligence: {
-          dots: 1,
+          rating: 1,
         },
         wits: {
-          dots: 1,
+          rating: 1,
         },
       },
     },

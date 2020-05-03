@@ -8,13 +8,13 @@ export default {
         priority: 1,
         traits: {
           strength: {
-            dots: 1,
+            rating: 1,
           },
           dexterity: {
-            dots: 1,
+            rating: 1,
           },
           stamina: {
-            dots: 1,
+            rating: 1,
           },
         },
       },
@@ -22,13 +22,13 @@ export default {
         priority: 2,
         traits: {
           charisma: {
-            dots: 1,
+            rating: 1,
           },
           manipulation: {
-            dots: 1,
+            rating: 1,
           },
           appearance: {
-            dots: 1,
+            rating: 1,
           },
         },
       },
@@ -36,13 +36,13 @@ export default {
         priority: 3,
         traits: {
           perception: {
-            dots: 1,
+            rating: 1,
           },
           intelligence: {
-            dots: 1,
+            rating: 1,
           },
           wits: {
-            dots: 1,
+            rating: 1,
           },
         },
       },
