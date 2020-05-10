@@ -1,8 +1,8 @@
 import React from 'react';
 
 interface IProps {
-  value?: string;
-  onChange: (value?: string) => void;
+  value: string;
+  onChange: (value: string) => void;
 }
 
 const Specialty: React.FC<IProps> = ({ value, onChange }) => {

@@ -19,7 +19,7 @@ interface IProps {
   categoryParent: Record<string, ICategory>;
   categoryName: string;
   onClick: (name: string) => void;
-  onSpecialtyChange: (traitName: string, specialty?: string) => void;
+  onSpecialtyChange: (traitName: string, specialty: string) => void;
   onPriorityChange: (priority: number) => void;
 }
 
@@ -36,7 +36,7 @@ const TraitCategory: React.FC<IProps> = ({
   const traitNames: string[] = Object.keys(category.traits);
 
   const traits = traitNames.map((traitName) => {
-    const handleSpecialtyChange = (specialty?: string) => {
+    const handleSpecialtyChange = (specialty: string) => {
       onSpecialtyChange(traitName, specialty);
     };
 
@@ -47,7 +47,7 @@ const TraitCategory: React.FC<IProps> = ({
         rating={category.traits[traitName].rating}
         maxDots={standardMaxDots}
         onClick={onClick}
-        specialty={category.traits[traitName].specialty}
+        specialty={category.traits[traitName].specialty || ''}
         onSpecialtyChange={handleSpecialtyChange}
       />
     );

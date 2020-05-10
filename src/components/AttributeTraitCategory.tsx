@@ -20,7 +20,7 @@ const AttributeTraitCategory: React.FC<IProps> = ({ categoryName }) => {
     dispatch(addDot({ category: categoryName, trait: traitName as any }));
   };
 
-  const handleSpecialtyChange = (traitName: string, specialty?: string) => {
+  const handleSpecialtyChange = (traitName: string, specialty: string) => {
     dispatch(
       setSpecialty({
         category: categoryName,

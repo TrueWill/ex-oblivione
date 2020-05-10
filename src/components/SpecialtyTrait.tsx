@@ -9,8 +9,8 @@ interface IProps {
   rating: number;
   maxDots: number;
   onClick: (name: string) => void;
-  specialty?: string;
-  onSpecialtyChange: (specialty?: string) => void;
+  specialty: string;
+  onSpecialtyChange: (specialty: string) => void;
 }
 
 const SpecialtyTrait: React.FC<IProps> = ({
