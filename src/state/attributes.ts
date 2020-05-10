@@ -25,7 +25,7 @@ export type AttributeTrait =
       trait: keyof typeof initialState.character.attributes.mental.traits;
     };
 
-export type AttributeTraitSpecialty = AttributeTrait & { specialty: string };
+export type AttributeTraitSpecialty = AttributeTrait & { specialty?: string };
 
 // See https://stackoverflow.com/a/61450491/161457
 type Traits = Record<

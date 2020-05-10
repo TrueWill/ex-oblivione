@@ -6,8 +6,8 @@ interface IProps {
 }
 
 const Specialty: React.FC<IProps> = ({ value, onChange }) => {
-  const handleChange = () => {
-    onChange(value);
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    onChange(event.target.value);
   };
 
   return (
