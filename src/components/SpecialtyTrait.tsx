@@ -1,6 +1,7 @@
 import React from 'react';
 import Trait from './Trait';
 import Specialty from './Specialty';
+import { minimumTraitRatingForSpecialty } from '../constants/characterOptions';
 
 interface IProps {
   name: string;
@@ -30,7 +31,9 @@ const SpecialtyTrait: React.FC<IProps> = ({
         maxDots={maxDots}
         onClick={onClick}
       />
-      <Specialty value={specialty} onChange={onSpecialtyChange} />
+      {rating >= minimumTraitRatingForSpecialty && (
+        <Specialty value={specialty} onChange={onSpecialtyChange} />
+      )}
     </div>
   );
 };
