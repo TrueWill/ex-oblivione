@@ -1,6 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import initialState from './initialState';
-import { minimumTraitRatingForSpecialty } from '../constants/characterOptions';
+import {
+  minimumTraitRatingForSpecialty,
+  standardMaxDots,
+} from '../constants/characterOptions';
 import { RootState } from './store';
 
 export interface AttributeCategoryPriority {
@@ -59,7 +62,11 @@ const attributesSlice = createSlice({
     addDot(state, action: PayloadAction<AttributeTrait>) {
       const { category, trait } = action.payload;
 
-      (state[category].traits as Traits)[trait].rating++;
+      const traitObject = (state[category].traits as Traits)[trait];
+
+      if (traitObject.rating < standardMaxDots) {
+        traitObject.rating++;
+      }
     },
     removeDot(state, action: PayloadAction<AttributeTrait>) {
       const { category, trait } = action.payload;

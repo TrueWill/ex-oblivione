@@ -211,6 +211,61 @@ it('should add dot', () => {
   });
 });
 
+it('should not add dot if at 5', () => {
+  const state = {
+    physical: {
+      priority: 1,
+      traits: {
+        strength: {
+          rating: 1,
+        },
+        dexterity: {
+          rating: 1,
+        },
+        stamina: {
+          rating: 1,
+        },
+      },
+    },
+    social: {
+      priority: 2,
+      traits: {
+        charisma: {
+          rating: 1,
+        },
+        manipulation: {
+          rating: 5,
+        },
+        appearance: {
+          rating: 1,
+        },
+      },
+    },
+    mental: {
+      priority: 3,
+      traits: {
+        perception: {
+          rating: 1,
+        },
+        intelligence: {
+          rating: 1,
+        },
+        wits: {
+          rating: 1,
+        },
+      },
+    },
+  };
+
+  deepFreeze(state);
+
+  const action = addDot({ category: 'social', trait: 'manipulation' });
+
+  const nextState = reducer(state, action);
+
+  expect(nextState).toEqual(state);
+});
+
 it('should remove dot', () => {
   const state = {
     physical: {
@@ -361,50 +416,7 @@ it('should not remove dot if at 1', () => {
 
   const nextState = reducer(state, action);
 
-  expect(nextState).toEqual({
-    physical: {
-      priority: 1,
-      traits: {
-        strength: {
-          rating: 1,
-        },
-        dexterity: {
-          rating: 1,
-        },
-        stamina: {
-          rating: 1,
-        },
-      },
-    },
-    social: {
-      priority: 2,
-      traits: {
-        charisma: {
-          rating: 1,
-        },
-        manipulation: {
-          rating: 1,
-        },
-        appearance: {
-          rating: 1,
-        },
-      },
-    },
-    mental: {
-      priority: 3,
-      traits: {
-        perception: {
-          rating: 1,
-        },
-        intelligence: {
-          rating: 1,
-        },
-        wits: {
-          rating: 1,
-        },
-      },
-    },
-  });
+  expect(nextState).toEqual(state);
 });
 
 it('should set specialty', () => {
