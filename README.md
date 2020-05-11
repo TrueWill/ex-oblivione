@@ -23,9 +23,7 @@ This builds heavily on [Embracer](https://github.com/TrueWill/embracer), another
 - No ESLint warnings/errors
 - No console warnings/errors
 - Works in modern browsers
-- All tests pass
-
-I'm using [React Testing Library](https://github.com/testing-library/react-testing-library) for tests, but frequently dropping to the [DOM API](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) to test components. If anyone has suggestions on accessibility for an app of this complexity (preferably preserving the look and feel), please share.
+- Jest/Enzyme tests (using it() alias for test()) - all passing
 
 ## Acknowledgements
 

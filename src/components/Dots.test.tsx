@@ -1,31 +1,31 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import Dots from './Dots';
 
 const unfilledSelector = '.fa-circle-thin';
 const filledSelector = '.fa-circle';
 
 it('should render without crashing', () => {
-  render(<Dots />);
+  shallow(<Dots />);
 });
 
 it('should use defaults', () => {
-  const container = render(<Dots />).container;
+  const wrapper = shallow(<Dots />);
 
-  expect(container.querySelectorAll(unfilledSelector)).toHaveLength(5);
-  expect(container.querySelectorAll(filledSelector)).toHaveLength(0);
+  expect(wrapper.find(unfilledSelector)).toHaveLength(5);
+  expect(wrapper.find(filledSelector)).toHaveLength(0);
 });
 
 it('should work when max rating', () => {
-  const container = render(<Dots rating={4} max={4} />).container;
+  const wrapper = shallow(<Dots rating={4} max={4} />);
 
-  expect(container.querySelectorAll(unfilledSelector)).toHaveLength(0);
-  expect(container.querySelectorAll(filledSelector)).toHaveLength(4);
+  expect(wrapper.find(unfilledSelector)).toHaveLength(0);
+  expect(wrapper.find(filledSelector)).toHaveLength(4);
 });
 
 it('should work when partial rating', () => {
-  const container = render(<Dots rating={2} max={5} />).container;
+  const wrapper = shallow(<Dots rating={2} max={5} />);
 
-  expect(container.querySelectorAll(unfilledSelector)).toHaveLength(3);
-  expect(container.querySelectorAll(filledSelector)).toHaveLength(2);
+  expect(wrapper.find(unfilledSelector)).toHaveLength(3);
+  expect(wrapper.find(filledSelector)).toHaveLength(2);
 });
